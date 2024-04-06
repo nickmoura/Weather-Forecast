@@ -1,23 +1,34 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-body {
+html, body {
+	height: 100vh;
+	width: 100vw;
 	background-image: url(../img/fundo-1920.jpg);
-	background-position: center;
+	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	overflow: hidden;
+	color: white;
+	font-family: 'Poppins', sans-serif;
 }
 
 .weather-card {
 	max-width: 400px;
 	margin: 50px auto;
 	padding: 20px;
+	background: transparent;
+	border: 2px solid #ffffff33;
 	border-radius: 10px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	background-color: #fff;
+	backdrop-filter: blur(20px);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 	position: relative;
 	/* To position the sun icon */
 }
@@ -25,8 +36,8 @@ body {
 .weather-title {
 	font-size: 24px;
 	font-weight: bold;
-	color: #333;
 	margin-bottom: 20px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .input-group-text {
@@ -41,7 +52,7 @@ body {
 
 .weather-info {
 	font-size: 18px;
-	color: #555;
+	color: rgb(230, 211, 211);
 	margin-bottom: 10px;
 }
 
@@ -54,11 +65,9 @@ body {
 	background-color: #0056b3;
 }
 
-.sunny-icon {
-	position: absolute;
-	top: 1px;
-	right: 15px;
-	color: #ffce00;
-	/* margin-bottom: 1rem; */
-	font-size: 3rem;
+
+
+.result {
+	font-weight: 700;
+	color: white;
 }

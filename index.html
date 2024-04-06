@@ -14,40 +14,35 @@
 
 <body>
     <div class="weather-card">
-        <div class="row justify-content-end">
-            <div class="col-auto">
-                <div class="sunny-icon">
-                    <i class="bi bi-sun-fill"></i>
-                </div>
-            </div>
-        </div>
-        <h1 class="weather-title text-center mb-4">
-          Previsão do tempo</h1>
+        <h1 class="weather-title text-center mb-4">Previsão do tempo</h1>
+          <form class="form">
         <div class="input-group mb-3">
-            <input type="text" class="form-control"
-                   placeholder="Insira a cidade"
-                   aria-label="City Name"
-                aria-describedby="basic-addon2">
-            <button class="btn btn-primary weather-btn"
-                    type="button" id="button-addon2">Buscar</button>
+                <input 
+                    type="text"
+                    class="form-control cidade"
+                    placeholder="Busque a cidade"
+                    aria-label="Nome da Cidade"
+                />
+                <button class="btn btn-primary weather-btn">Buscar</button>
+            </form>
         </div>
         <div id="weatherInfo">
             <div class="weather-icon text-center">
                 <i class="bi bi-cloud-sun"></i>
             </div>
             <div class="weather-info text-center">
-                <p>Temperatura: 20°C</p>
-                <p>Clima: Ensolarado</p>
-                <p>Umidade: 60%</p>
-                <p>Velocidade do vento: 5 m/s</p>
-                <p>Visibilidade: 10 km</p>
+                <p>Temperatura: <span class="result temperatura">20°C</span></p>
+                <p>Clima: <span class="result clima">Nublado</span></p>
+                <p>Umidade: <span class="result umidade">60%</span></p>
+                <p>Velocidade do vento: <span class="result velocidadeVento">5 m/s</span></p>
+                <p>Visibilidade: <span class="result visibilidade">10 km</span></p>
             </div>
         </div>
     </div>
  
     <!-- Include Bootstrap JS -->
-    <script src=
-"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/script.js" defer></script>
 </body>
 
 </html>
